@@ -1,4 +1,6 @@
-# Introduction
+# Cloud Engineering Pathway Assessment
+
+## Introduction
 
 In this project, I will containerize a full-stack To-Do List application that follows a 3-tier architecture: Frontend, Backend, and Database. The goal of this exercise is to ensure that the application runs securely, efficiently, and consistently across different environments by using Docker and Docker Compose.
 

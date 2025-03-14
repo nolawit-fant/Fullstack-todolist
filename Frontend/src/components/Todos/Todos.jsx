@@ -30,6 +30,8 @@ const Todos = () => {
     setNumOfPages,
     setPage
   );
+
+
   const { deleteTodo, isDeletingTodo } = useDeleteTodo(fetchTodos, page, limit);
 
   const handlePageChange = (e, value) => {
@@ -69,8 +71,15 @@ const Todos = () => {
   ));
 
   useEffect(() => {
+    console.log("Fetching todos..."); 
     fetchTodos(page, limit);
-  }, []);
+  }, [page, limit]);
+
+  //New
+  useEffect(() => {
+    console.log("Current todos:", todos); // Debugging log
+  }, [todos]);
+  //N
 
   if (isFetchingTodos) return <Loader />;
 

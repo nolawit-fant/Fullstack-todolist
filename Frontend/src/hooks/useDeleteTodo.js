@@ -6,10 +6,11 @@ const useDeleteTodo = (fetchTodos, page, limit) => {
   let status = false;
 
   const deleteTodo = async (id) => {
+    console.log("Attempting to delete ID:", id); // Debugging log
     try {
       setIsLoading(true);
       const response = await fetch(
-        `https://fullstack-todolist-upnv.onrender.com/todos/${id}`,
+        `http://localhost:5000/api/todos/${id}`,
         {
           method: "DELETE",
           headers: {

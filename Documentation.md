@@ -102,7 +102,7 @@ Access the application at the following URLs:
 
 - Frontend: [http://localhost:3000](http://localhost:3000)
 - Backend: [http://localhost:5000](http://localhost:5000)
-- MongoDB: `http://localhost:27017` (The MongoDB database is exposed at this URL)
+- MongoDB: [http://localhost:27017](http://localhost:27017) 
 
 ## Network Configurations
 
